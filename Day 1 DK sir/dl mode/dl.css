@@ -1,0 +1,54 @@
+body{
+  background: rgb(169, 223, 245);
+  color: black;
+  text-align: center;
+  font-family: Arial;
+  height: 100vh;
+  margin: 0;
+  transition: 0.5s;
+}
+
+button{
+  padding:10px 20px;
+  margin-top:20px;
+  font-size:18px;
+  cursor:pointer;
+}
+
+/* Night Mode */
+.dark{
+  background:#0b0c2a;
+  color:white;
+}
+
+/* Stars */
+.stars{
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  pointer-events:none;
+  display:none;
+}
+
+.dark .stars{
+  display:block;
+}
+
+.stars::after{
+  content:"";
+  position:absolute;
+  width:2px;
+  height:2px;
+  background:white;
+  box-shadow:
+  50px 100px white,
+  200px 150px white,
+  300px 80px white,
+  400px 200px white,
+  600px 120px white,
+  800px 300px white,
+  1000px 50px white,
+  1200px 250px white;
+}

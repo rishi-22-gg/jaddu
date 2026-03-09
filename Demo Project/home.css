@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    background: #0f0c29;
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+}
+.brand { font-weight: 900; letter-spacing: 3px; font-size: 24px; color: #a29bfe; }
+.links a { color: #fff; text-decoration: none; margin-left: 30px; font-weight: 300; transition: 0.3s; }
+.links a:hover { color: #a29bfe; }
+
+.hero {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    padding: 60px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+h1 span { color: #a29bfe; text-shadow: 0 0 10px #a29bfe; }
+.search-wrapper { margin-top: 30px; display: flex; gap: 10px; }
+input {
+    background: rgba(0,0,0,0.3);
+    border: 2px solid #444;
+    padding: 15px 25px;
+    border-radius: 12px;
+    color: white;
+    width: 350px;
+    outline: none;
+}
+.glow-btn {
+    background: #a29bfe;
+    border: none;
+    padding: 0 30px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 0 15px #a29bfe;
+}
