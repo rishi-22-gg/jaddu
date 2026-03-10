@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Password Validation</title>
+<style>
+body{
+    font-family: Arial;
+    text-align: center;
+    margin-top: 100px;
+}
+input{
+    padding:10px;
+    font-size:16px;
+}
+button{
+    padding:10px 20px;
+    margin-top:10px;
+}
+</style>
+</head>
+
+<body>
+
+<h2>Create Password</h2>
+
+<input type="password" id="password" placeholder="Enter password">
+<br><br>
+<button onclick="checkPassword()">Submit</button>
+
+<p id="message"></p>
+
+<script>
+function checkPassword(){
+    let password = document.getElementById("password").value;
+
+    let lengthCheck = password.length >= 8 && password.length <= 10;
+    let uppercaseCheck = /[A-Z]/.test(password);
+
+    if(lengthCheck && uppercaseCheck){
+        document.getElementById("message").innerHTML = "✅ Password accepted";
+        document.getElementById("message").style.color = "green";
+    } 
+    else{
+        document.getElementById("message").innerHTML =
+        "❌ Password must be 8-10 characters and contain at least 1 uppercase letter.";
+        document.getElementById("message").style.color = "red";
+    }
+}
+</script>
+
+</body>
+</html>

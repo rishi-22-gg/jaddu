@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Counter Page</title>
+</head>
+<body>
+
+<p id="numberPara">0</p>
+
+<button id="myButton">click</button>
+
+<script>
+const para = document.getElementById("numberPara");
+const button = document.getElementById("myButton");
+
+button.addEventListener("click", function () {
+    let value = parseInt(para.textContent);
+    value = value + 1;
+    para.textContent = value;
+});
+</script>
+
+</body>
+</html>
